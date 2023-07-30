@@ -6,21 +6,32 @@
 //
 
 import SwiftUI
+import CoreLocation
 
-struct ContentView: View {
+struct LocationView: View {
+    @ObservedObject private var locationManager = LocationManager()
+
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            Text("User's Current Location")
+                .font(.title)
+                .padding()
+
+            Text("Latitude: \(locationManager.userLatitude)")
+            Text("Longitude: \(locationManager.userLongitude)")
+
+            Button("Get Location") {
+                locationManager.requestLocation()
+            }
+            .padding()
         }
-        .padding()
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct LocationView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        LocationView()
     }
 }
+
+

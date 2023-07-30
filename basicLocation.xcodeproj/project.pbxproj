@@ -11,6 +11,11 @@
 		AAF8EE0A2A763F1800F6DAA7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF8EE092A763F1800F6DAA7 /* ContentView.swift */; };
 		AAF8EE0C2A763F1900F6DAA7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAF8EE0B2A763F1900F6DAA7 /* Assets.xcassets */; };
 		AAF8EE0F2A763F1900F6DAA7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAF8EE0E2A763F1900F6DAA7 /* Preview Assets.xcassets */; };
+		AAF8EE162A76406400F6DAA7 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF8EE152A76406400F6DAA7 /* LocationManager.swift */; };
+		AAF8EE182A76B74E00F6DAA7 /* CheckScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF8EE172A76B74E00F6DAA7 /* CheckScrollView.swift */; };
+		AAF8EE1A2A76B9A800F6DAA7 /* CallTextAI.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF8EE192A76B9A800F6DAA7 /* CallTextAI.swift */; };
+		AAF8EE1D2A76BA7200F6DAA7 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = AAF8EE1C2A76BA7200F6DAA7 /* SwiftyJSON */; };
+		AAF8EE202A76BA7E00F6DAA7 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = AAF8EE1F2A76BA7E00F6DAA7 /* Alamofire */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +24,9 @@
 		AAF8EE092A763F1800F6DAA7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AAF8EE0B2A763F1900F6DAA7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AAF8EE0E2A763F1900F6DAA7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AAF8EE152A76406400F6DAA7 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		AAF8EE172A76B74E00F6DAA7 /* CheckScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckScrollView.swift; sourceTree = "<group>"; };
+		AAF8EE192A76B9A800F6DAA7 /* CallTextAI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallTextAI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +34,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAF8EE1D2A76BA7200F6DAA7 /* SwiftyJSON in Frameworks */,
+				AAF8EE202A76BA7E00F6DAA7 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,6 +63,9 @@
 			children = (
 				AAF8EE072A763F1800F6DAA7 /* basicLocationApp.swift */,
 				AAF8EE092A763F1800F6DAA7 /* ContentView.swift */,
+				AAF8EE172A76B74E00F6DAA7 /* CheckScrollView.swift */,
+				AAF8EE192A76B9A800F6DAA7 /* CallTextAI.swift */,
+				AAF8EE152A76406400F6DAA7 /* LocationManager.swift */,
 				AAF8EE0B2A763F1900F6DAA7 /* Assets.xcassets */,
 				AAF8EE0D2A763F1900F6DAA7 /* Preview Content */,
 			);
@@ -83,6 +96,10 @@
 			dependencies = (
 			);
 			name = basicLocation;
+			packageProductDependencies = (
+				AAF8EE1C2A76BA7200F6DAA7 /* SwiftyJSON */,
+				AAF8EE1F2A76BA7E00F6DAA7 /* Alamofire */,
+			);
 			productName = basicLocation;
 			productReference = AAF8EE042A763F1800F6DAA7 /* basicLocation.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +128,10 @@
 				Base,
 			);
 			mainGroup = AAF8EDFB2A763F1800F6DAA7;
+			packageReferences = (
+				AAF8EE1B2A76BA7200F6DAA7 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+				AAF8EE1E2A76BA7E00F6DAA7 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = AAF8EE052A763F1800F6DAA7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,8 +158,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAF8EE182A76B74E00F6DAA7 /* CheckScrollView.swift in Sources */,
 				AAF8EE0A2A763F1800F6DAA7 /* ContentView.swift in Sources */,
 				AAF8EE082A763F1800F6DAA7 /* basicLocationApp.swift in Sources */,
+				AAF8EE162A76406400F6DAA7 /* LocationManager.swift in Sources */,
+				AAF8EE1A2A76B9A800F6DAA7 /* CallTextAI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +294,9 @@
 				DEVELOPMENT_TEAM = T4JB96P77H;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "App need location Line 1";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "App needs location Line 2";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "App needs location Line 3";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +326,9 @@
 				DEVELOPMENT_TEAM = T4JB96P77H;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "App need location Line 1";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "App needs location Line 2";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "App needs location Line 3";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -339,6 +369,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AAF8EE1B2A76BA7200F6DAA7 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		AAF8EE1E2A76BA7E00F6DAA7 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AAF8EE1C2A76BA7200F6DAA7 /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AAF8EE1B2A76BA7200F6DAA7 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+		AAF8EE1F2A76BA7E00F6DAA7 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AAF8EE1E2A76BA7E00F6DAA7 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AAF8EDFC2A763F1800F6DAA7 /* Project object */;
 }
