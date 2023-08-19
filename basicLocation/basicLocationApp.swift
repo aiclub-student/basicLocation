@@ -11,9 +11,9 @@ import SwiftUI
 struct basicLocationApp: App {
     var body: some Scene {
         WindowGroup {
-            //LocationView()
+            LocationView()
             //CheckScrollView()
-            CallTextAI()
+            //CallTextAI()
         }
     }
 }

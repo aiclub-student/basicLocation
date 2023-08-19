@@ -23,8 +23,20 @@ struct LocationView: View {
             Button("Get Location") {
                 locationManager.requestLocation()
             }
+            Button("Find neighbours") {
+                findNeighbours()
+            }
             .padding()
         }
+    }
+    
+    func findNeighbours() {
+        let loc = locationManager.getStoredLocation()
+            let businessList = findNearestBusinesses(from: loc, businesses: businesses, topN: 2)
+        for b in businessList {
+            print("Neighour is \(b)")
+        }
+
     }
 }
 
